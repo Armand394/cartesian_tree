@@ -197,11 +197,11 @@ public class Main {
         System.out.println("Height of tree: " + height);
 
         // Part 5: Performance Analysis
-        for(int nodes = 1000; nodes <= 10000; nodes+=1000){
+        for(int nodes = 10000000; nodes <= 12000000; nodes+=1000000){
 
-            String outputFile = "cartesianTree_Performance_supression2_" + nodes + ".txt";
+            String outputFile = "cartesianTree_Performance_supression3_" + nodes + ".txt";
 
-            Path outputPath = Paths.get("C:\\Users\\external\\Desktop\\M1S1\\COMPLEX\\Projet\\resultat\\resultat3\\" + outputFile);
+            Path outputPath = Paths.get("C:\\Users\\external\\Desktop\\M1S1\\COMPLEX\\Cartesian Tree\\results\\resultat3\\" + outputFile);
 
             try (BufferedWriter writer = new BufferedWriter(new FileWriter(outputPath.toFile()))) {
                 
